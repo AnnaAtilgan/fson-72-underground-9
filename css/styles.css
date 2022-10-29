@@ -54,8 +54,53 @@ address {
 /* components */
 .container {
   width: 1360px;
-  padding: 0 15px;
+  padding: 0 28px;
   margin: 0 auto;
 }
 
 /* header */
+.header{
+  background-color: #5e5e5e;
+
+}
+
+.header .container{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.header-logo{
+font-size: 35px;
+line-height: 1.21;
+margin-right: auto;
+color:var(--secondary-text-color);
+}
+
+.accent{
+  color: var(--accent-color);
+  margin-right: 12px;
+}
+
+.header-nav-link{
+line-height: 1.56;
+color: var(--secondary-text-color);
+padding-top: 21px;
+padding-bottom: 21px;
+display: inline-block;
+}
+
+.header-nav-link:hover ,.header-nav-link:focus{
+  color: var(--accent-color);
+}
+
+.header-nav{
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-list{
+  display: flex;
+  align-items: center;
+  gap:38px;
+
+}
