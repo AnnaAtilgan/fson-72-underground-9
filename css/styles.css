@@ -268,7 +268,7 @@ address {
   color: var(--primary-tex-color);
 }
 
-.about-icon-wrapper{
+.about-icon-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -277,10 +277,6 @@ address {
   height: 67px;
   border-radius: 50%;
   background-color: var(--accent-color);
-}
-
-.about-icon{
-
 }
 
 /* solutions */
