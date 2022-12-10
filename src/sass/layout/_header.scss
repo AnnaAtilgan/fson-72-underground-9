@@ -1,24 +1,48 @@
 .header {
-  position: absolute;
+  position: fixed;
   width: 100%;
+  padding-top: 21px;
+
+  @media screen and(min-width: $tablet) {
+    padding-top: 0;
+  }
 
   & .container {
-    padding-left: 50px;
-    padding-right: 50px;
+    @media screen and(min-width: $tablet) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    @media screen and(min-width: $descktop) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
   }
 
   &-logo {
-    font-size: 35px;
+    font-size: 32px;
     line-height: 1.21;
     margin-right: auto;
     color: var(--secondary-text-color);
 
     display: flex;
     align-items: center;
+
+    @media screen and(max-width: 767px) {
+      justify-content: center;
+    }
+
+    @media screen and(min-width: $tablet) {
+      font-size: 35px;
+    }
   }
 
   .logo-icon {
-    margin-right: 10px;
+    margin-right: 5px;
+
+    @media screen and(min-width: $tablet) {
+      margin-right: 10px;
+    }
   }
 
   .accent {
@@ -27,6 +51,7 @@
   }
 
   &-nav-link {
+    font-size: 16px;
     line-height: 1.56;
     color: var(--secondary-text-color);
     padding-top: 21px;
@@ -34,14 +59,18 @@
     display: inline-block;
 
     position: relative;
+  }
 
-    /* коли одна властисть */
-    transition: color var(--duration) var(--timing-function);
+  /* коли одна властисть */
+  transition: color var(--duration) var(--timing-function);
 
-    /* Коли більше 2-х властивостей */
-    /* transition-property: color, background-color;
+  /* Коли більше 2-х властивостей */
+  /* transition-property: color, background-color;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function); */
+
+  @media screen and(min-width: $tablet) {
+    font-size: 18px;
   }
 
   &-nav-link:hover,
@@ -83,13 +112,27 @@
 } */
 
   &-nav {
-    display: flex;
-    align-items: center;
+    @media screen and(min-width: $tablet) {
+      display: flex;
+      align-items: center;
+    }
   }
 
   &-nav-list {
     display: flex;
     align-items: center;
-    gap: 38px;
+    gap: 12px;
+
+    @media screen and(max-width: 767px) {
+      justify-content: center;
+    }
+
+    @media screen and(min-width: $tablet) {
+      gap: 18px;
+    }
+
+    @media screen and(min-width: $descktop) {
+      gap: 38px;
+    }
   }
 }
